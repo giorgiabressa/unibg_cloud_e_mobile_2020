@@ -12,7 +12,7 @@ module.exports.get_by_speaker = (event, context, callback) => {
         body = JSON.parse(event.body)
     }
     // set default
-    if(!body._id) {
+    if(!body._id) {                                                     //_id corrisponde al nome dello speaker
         callback(null, {
                     statusCode: 500,
                     headers: { 'Content-Type': 'text/plain' },
